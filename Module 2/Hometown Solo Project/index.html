@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <a class="topnav-el" href="#home">Home</a>
+      <a class="topnav-el" href="#visit">Top activities</a>
+      <a class="topnav-el" href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="header-el" id="home">
+        <!-- <h1 class="element-style">Visit Torshov</h1>
+        <h2 class="element-style">
+          Enjoy culture and sports in this vibrant <br />district close to the
+          center of Oslo.
+        </h2> -->
+      </div>
+
+      <!-- ACTIVITIES SECTION -->
+      <div class="activities-section">
+        <h3 id="visit">Top three activities to do in Vicenza</h3>
+
+        <div class="activities-cards">
+          <div class="card">
+            <div class="card-img">
+              <img src="images/Basilica-Palladiana.jpg" alt="" />
+            </div>
+            <div class="card-data">
+              <p>One of the most impressive buildings in Vicenza’s main square, the Basilica 
+                Palladiana moasts beautiful loggia designed by Palladio.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="images/Riverbank.jpg" alt="" />
+            </div>
+            <div class="card-data">
+              <p>At the edge of the historical center, you can walk through the green Parco Querini, 
+                with its classical temple.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="images/Parco-Querini.jpg" alt="" />
+            </div>
+            <div class="card-data">
+              <p>Andrea Palladio is considered to be one of the most influential 
+                architects that ever lived.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUIDE SECTION -->
+      <div class="guide-section">
+        <div class="guide">
+          <div class="contact">
+            <h3> Your guide</h3>
+            <img src="images/my_image.jpg" />
+            <h4 id="contact">Cezar Cernescu</h4>
+          </div>
+          <div class="guide-card-info">
+            <form >
+            <div class="guide-info">
+              <p>
+                "I have been living in Vicenza for over 10 years, so I 
+                can show you all its best parts and hidden secrets."
+              </p>
+            </div>
+            <div class="contact-form">
+              <p id="form-title">Contact me:</p>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+              <input id="btn" type="submit" value="Submit" />
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

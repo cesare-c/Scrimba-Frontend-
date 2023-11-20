@@ -1,0 +1,206 @@
+body {
+  user-select: none;
+  margin: 0;
+  text-align: center;
+  background-color: #a8dadc;
+}
+
+/* NAV BAR*/
+.topnav {
+  width: 100%;
+  height: 50px;
+  border-top: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.topnav-el {
+  color: #f1faee;
+  float: left;
+  display: block;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px black;
+  padding: 5px 15px;
+  width: 150px;
+  height: auto;
+  font-size: 25px;
+}
+.topnav-el:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*    MAIN CONTAINER */
+
+.container {
+  width: 90%;
+  height: auto;
+  border: 15px solid #f1faee;
+  margin: 50px auto;
+  border-radius: 20px;
+  display: flex;
+  /* min-height: 100vh; */
+  flex-direction: column;
+}
+/*     HOME SECTION   */
+#home {
+  height: 700px;
+  background-image: url(images/vicenza-2.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+}
+#home:hover {
+  animation: 5s steps(2) infinite slideshow;
+}
+
+@keyframes slideshow {
+  33% {
+    background: url(images/vicenza-1.jpg) top/cover no-repeat;
+  }
+  66% {
+    background: url(images/Parco-Querini.jpg) top/cover no-repeat;
+  }
+}
+
+/* Activities Section*/
+#visit {
+  font-size: 45px;
+}
+.activities-section {
+  width: auto;
+  height: auto;
+
+  background-color: #f1faee;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.activities-cards {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background-color: #a8dadc;
+  width: 300px;
+  height: 450px;
+  border-radius: 25px;
+}
+
+.card:hover img {
+  width: 300px;
+}
+
+.card-img img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.card-data {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 10px;
+}
+/* GUIDE SECTION*/
+
+.guide-section {
+  height: auto;
+  background-color: #f1faee;
+
+  display: flex;
+  align-items: start;
+}
+.contact {
+  width: 300px;
+  border: 5px solid #a8dadc;
+  background-color: #f2f2f2;
+
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.guide-info {
+  border: 5px solid #a8dadc;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  width: 520px;
+}
+.guide-info p {
+  font-size: 20px;
+  padding: 25px 30px;
+}
+.contact img {
+  width: 150px;
+  border-radius: 50px;
+}
+#contact {
+  font-size: 25px;
+  font-style: italic;
+}
+.guide-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-form {
+  text-align: start;
+  border: 5px solid #a8dadc;
+  background-color: #f2f2f2;
+
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#form-title {
+  text-align: center;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#btn {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.guide {
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
